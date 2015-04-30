@@ -31,7 +31,7 @@ public class CameraScreen extends Sprite {
 
     private var cameraView:CameraView;
     private var _bitmapData:BitmapData;
-    private var imageIndex:Number = 3;
+    private var image:Image;
 
     private var _okButton:Button;
 
@@ -91,7 +91,6 @@ public class CameraScreen extends Sprite {
 
     public function set foreground(value:Image):void {
         _foreground = value;
-        if (value != null) imageIndex = 4;
     }
 
     private var _buttonSpacing:Number = 40;
@@ -134,11 +133,7 @@ public class CameraScreen extends Sprite {
         //Put it onstage
         addChild(cameraView);
 
-        if (_foreground) {
-            _foreground.x = _camPosition.x;
-            _foreground.y = _camPosition.y;
-            addChild(_foreground);
-        }
+
         //Select a webcam
         cameraView.selectCamera(0);
         _okButton.x = cameraView.width / 2 - _okButton.width / 2 + _buttonSpacing;
@@ -148,6 +143,12 @@ public class CameraScreen extends Sprite {
         _cancelButton.x = cameraView.width / 2 - _cancelButton.width / 2 - _buttonSpacing;
         _cancelButton.y = _okButton.y + 10;
         addChild(_cancelButton);
+
+        if (_foreground) {
+            _foreground.x = _camPosition.x;
+            _foreground.y = _camPosition.y;
+            addChild(_foreground);
+        }
 
         _discardButton.x = _cancelButton.x;
         _discardButton.y = _cancelButton.y;
@@ -166,21 +167,23 @@ public class CameraScreen extends Sprite {
     private function onClickCamera(event:Event):void {
         var btn:Button = event.target as Button;
         if (btn == _okButton) {
+            var i:Number = getChildIndex(_cancelButton);
             _bitmapData = cameraView.getImage();
-            var image:Image = new Image(Texture.fromBitmapData(_bitmapData));
-            addChildAt(image, imageIndex);
+            image = new Image(Texture.fromBitmapData(_bitmapData));
+            addChildAt(image, i + 1);
+
             cameraView.pause();
             showControls();
-            dispatchEvent(new Event(TAKE_PICTURE));
+            dispatchEventWith(TAKE_PICTURE);
         } else if (btn == _cancelButton) {
-            dispatchEvent(new Event(CLOSED));
+            dispatchEventWith(CLOSED);
         } else if (btn == _acceptButton) {
-            dispatchEvent(new Event(ACCEPT_PICTURE));
+            dispatchEventWith(ACCEPT_PICTURE);
         } else if (btn == _discardButton) {
-            removeChildAt(imageIndex, true);
+            removeChild(image, true);
             hideControls();
             cameraView.resume();
-            dispatchEvent(new Event(RETAKE));
+            dispatchEventWith(RETAKE);
         }
     }
 }

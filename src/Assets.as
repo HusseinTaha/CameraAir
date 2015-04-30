@@ -16,6 +16,7 @@ public class Assets {
     [Embed(source="../medias/graphics/cancel.png")]
     public static var CancelTexture:Class;
 
+
     private static var gameTextures:Dictionary = new Dictionary();
 
 
