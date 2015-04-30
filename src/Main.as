@@ -1,52 +1,50 @@
 package {
 
 import flash.display.Sprite;
-import flash.geom.Rectangle;
-import flash.media.Camera;
-import flash.media.Video;
-import flash.text.TextField;
-
 import starling.core.Starling;
 
-import starling.display.Button;
-
-public class Main extends Sprite {
-
-
-    private var camera:Camera;
-
+public class Main extends flash.display.Sprite {
     private var myStarling:Starling;
 
     public function Main() {
-
-        /*camera = Camera.getCamera();
-        if (camera == null)
-        {
-            trace( "No camera is installed.");
-        }
-        else
-        {
-            trace("Camera is installed.");
-            camera.setMode( 320, 240, 10, true );
-            connectCamera();
-        }*/
-
-
-        myStarling = new Starling(CameraScreen, stage);
+        myStarling = new Starling(MainSprite, stage);
         myStarling.antiAliasing = 1;
         myStarling.start();
-
-
-
-    }
-
-    private function connectCamera():void
-    {
-        var video:Video = new Video(camera.width, camera.height);
-        video.x = 10;
-        video.y = 10;/**/
-        video.attachCamera(camera);
-        addChild(video);
     }
 }
+}
+
+import starling.display.Button;
+import starling.display.Sprite;
+import flash.geom.Rectangle;
+import starling.events.Event;
+
+class MainSprite extends Sprite {
+
+    public function MainSprite() {
+        this.addEventListener(Event.ADDED_TO_STAGE, onAddedToStage);
+    }
+
+    private function onAddedToStage(event:Event):void {
+        this.removeEventListener(Event.ADDED_TO_STAGE, onAddedToStage);
+        var s:CameraScreen = new CameraScreen();
+        /*
+        s.camPosition = new Rectangle(10, 10, 280, 280);
+        s.foreground = new Image(Assets.getTexture("CameraForeground"));
+        s.okButton = new Button(Assets.getTexture("CameraTexture"));
+        s.cancelButton = new Button(Assets.getTexture("CancelTexture"));
+        s.acceptButton = new Button(Assets.getTexture("CameraTexture"));
+        s.discardButton = new Button(Assets.getTexture("CancelTexture"));
+        */
+        addChild(s);
+        /*
+        s.addEventListener(CameraScreen.CLOSED, function():void {
+            trace("camera closed");
+        });
+        s.addEventListener(CameraScreen.TRIGGERED, function():void {
+            trace("camera closed");
+            var imgBytes:ByteArray = s.getJPEG();
+        });
+        */
+    }
 }
