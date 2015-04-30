@@ -154,8 +154,7 @@ public class CameraView extends Sprite
             video.attachCamera(camera);
 
             bmd = new BitmapData(screenRect.width * downSample, screenRect.height * downSample);
-            trace("screenRect.height * downSample: " + (screenRect.height * downSample));
-            trace("screenRect.height: " + height);
+
 
             video.addEventListener(Event.ENTER_FRAME, onVideoUpdate);
             var texture:starling.textures.Texture = starling.textures.Texture.fromBitmapData(bmd, false, false, downSample);
@@ -204,11 +203,7 @@ public class CameraView extends Sprite
      */
     private function onVideoUpdate(event:*):void {
         bmd.draw(video, matrix);
-        trace("video.height: " + (video.height));
-        trace("bmd.height: " + bmd.height);
         flash.display3D.textures.Texture(image.texture.base).uploadFromBitmapData(bmd);
-        trace("bmd.height: " + image.height);
-
     }
 }
 }
