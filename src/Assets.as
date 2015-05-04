@@ -13,8 +13,12 @@ public class Assets {
     [Embed(source="../medias/graphics/camera.png")]
     public static var CameraTexture:Class;
 
+
     [Embed(source="../medias/graphics/cancel.png")]
     public static var CancelTexture:Class;
+
+    [Embed(source="../medias/graphics/frame.png")]
+    public static var Frame:Class;
 
 
     private static var gameTextures:Dictionary = new Dictionary();

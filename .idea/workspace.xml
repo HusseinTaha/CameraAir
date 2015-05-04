@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a3921efa-ee8f-4fb2-8d0f-1f7b3e02f261" name="Default" comment="Fix remarks, and cleaning3">
+    <list default="true" id="a3921efa-ee8f-4fb2-8d0f-1f7b3e02f261" name="Default" comment="Fix bug">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/medias/graphics/frame.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/AirTestWebCam/Main.swf" afterPath="$PROJECT_DIR$/out/production/AirTestWebCam/Main.swf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fovea/ui/CameraScreen.as" afterPath="$PROJECT_DIR$/src/fovea/ui/CameraScreen.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AirTestWebCam.iml" afterPath="$PROJECT_DIR$/AirTestWebCam.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Assets.as" afterPath="$PROJECT_DIR$/src/Assets.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/AirTestWebCam/generated/Assets_CancelTexture.as" afterPath="$PROJECT_DIR$/out/production/AirTestWebCam/generated/Assets_CancelTexture.as" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fovea/ui/camera/CameraView.as" afterPath="$PROJECT_DIR$/src/fovea/ui/camera/CameraView.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MainSprite.as" afterPath="$PROJECT_DIR$/src/MainSprite.as" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="AirTestWebCam.iws" />
@@ -49,11 +51,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CameraScreen.as" pinned="false" current-in-tab="true">
+      <file leaf-file-name="CameraScreen.as" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/fovea/ui/CameraScreen.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.09829868" vertical-offset="1838" max-vertical-offset="2940">
-              <caret line="128" column="62" selection-start-line="128" selection-start-column="53" selection-end-line="128" selection-end-column="62" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2940">
+              <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
               <folding>
                 <element signature="e#65#97#0" expanded="true" />
               </folding>
@@ -73,11 +75,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CameraView.as" pinned="false" current-in-tab="false">
+      <file leaf-file-name="CameraView.as" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/fovea/ui/camera/CameraView.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1635" max-vertical-offset="3285">
-              <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.6351607" vertical-offset="2289" max-vertical-offset="3570">
+              <caret line="175" column="46" selection-start-line="175" selection-start-column="46" selection-end-line="175" selection-end-column="46" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#74#109#0" expanded="true" />
@@ -89,10 +91,10 @@
       <file leaf-file-name="Assets.as" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Assets.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="11" max-vertical-offset="540">
-              <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
+              <caret line="19" column="50" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
               <folding>
-                <marker date="1430398347000" expanded="true" signature="150:151" placeholder="..." />
+                <marker date="1430724719000" expanded="true" signature="150:151" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -118,10 +120,10 @@
         <option value="$PROJECT_DIR$/src/fovea/iu/ui/CameraScreen.as" />
         <option value="$PROJECT_DIR$/src/fovea/ui/camera/events/CameraEvent.as" />
         <option value="$PROJECT_DIR$/src/Main.as" />
-        <option value="$PROJECT_DIR$/src/Assets.as" />
-        <option value="$PROJECT_DIR$/src/fovea/ui/camera/CameraView.as" />
         <option value="$PROJECT_DIR$/src/MainSprite.as" />
         <option value="$PROJECT_DIR$/src/fovea/ui/CameraScreen.as" />
+        <option value="$PROJECT_DIR$/src/Assets.as" />
+        <option value="$PROJECT_DIR$/src/fovea/ui/camera/CameraView.as" />
       </list>
     </option>
   </component>
@@ -235,6 +237,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AirTestWebCam" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AirTestWebCam" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="medias" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="graphics" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -249,13 +269,13 @@
     <property name="recentsLimit" value="5" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FullScreen" value="true" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="options.lastSelected" value="preferences.sourceCode" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Applications/AS3corelib/src" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Applications/Air-Libs/pixelmask/src" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="151" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="153" />
@@ -275,12 +295,12 @@
     <property name="restartRequiresConfirmation" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/medias/graphics" />
-    </key>
     <key name="CreateActionScriptClassDialog.DESTINATION_PACKAGE_RECENT_KEY">
       <recent name="" />
       <recent name="fovea.ui.camera.events" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/medias/graphics" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/fovea/ui/camera" />
@@ -587,7 +607,7 @@
       <workItem from="1430307520743" duration="2707000" />
       <workItem from="1430373894234" duration="19774000" />
       <workItem from="1430402183013" duration="88000" />
-      <workItem from="1430720756624" duration="1437000" />
+      <workItem from="1430720756624" duration="3922000" />
     </task>
     <task id="LOCAL-00001" summary="Merge branch 'master' of https://github.com/HusseinTaha/CameraAir&#10;">
       <created>1430387834081</created>
@@ -613,11 +633,17 @@
       <option name="project" value="LOCAL" />
       <updated>1430398376743</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Fix bug">
+      <created>1430722539306</created>
+      <option name="number" value="00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1430722539307</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24006000" />
+    <option name="totallyTimeSpent" value="26491000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -695,7 +721,8 @@
     <MESSAGE value="Fix remarks, and cleaning" />
     <MESSAGE value="Fix remarks, and cleaning2" />
     <MESSAGE value="Fix remarks, and cleaning3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix remarks, and cleaning3" />
+    <MESSAGE value="Fix bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix bug" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -757,7 +784,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="540">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
-            <marker date="1430398347000" expanded="true" signature="150:151" placeholder="..." />
+            <marker date="1430724719000" expanded="true" signature="150:151" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -808,7 +835,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="540">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
-            <marker date="1430398347000" expanded="true" signature="150:151" placeholder="..." />
+            <marker date="1430724719000" expanded="true" signature="150:151" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -961,12 +988,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/fovea/ui/CameraScreen.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2940">
+          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
+          <folding>
+            <element signature="e#65#97#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Assets.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="585">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
+          <caret line="19" column="50" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
           <folding>
-            <marker date="1430398347000" expanded="true" signature="150:151" placeholder="..." />
+            <marker date="1430724719000" expanded="true" signature="150:151" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -983,21 +1020,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/fovea/ui/camera/CameraView.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1635" max-vertical-offset="3285">
-          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.6351607" vertical-offset="2289" max-vertical-offset="3570">
+          <caret line="175" column="46" selection-start-line="175" selection-start-column="46" selection-end-line="175" selection-end-column="46" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#74#109#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/fovea/ui/CameraScreen.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09829868" vertical-offset="1838" max-vertical-offset="2940">
-          <caret line="128" column="62" selection-start-line="128" selection-start-column="53" selection-end-line="128" selection-end-column="62" />
-          <folding>
-            <element signature="e#65#97#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1031,7 +1058,7 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
-          <last-edited>AS3CoreLib</last-edited>
+          <last-edited>PixelMask</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1055,11 +1082,12 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>AirTestWebCam|AirTestWebCam</last-edited>
+          <last-edited>AirTestWebCam</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

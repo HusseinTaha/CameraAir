@@ -18,6 +18,7 @@ import flash.utils.ByteArray;
 
 import starling.display.Image;
 import starling.display.Sprite;
+import starling.extensions.pixelmask.PixelMaskDisplayObject;
 import starling.textures.Texture;
 
 /**
@@ -64,6 +65,8 @@ public class CameraView extends Sprite
     private var downSample:Number = 1;
     private var rotate:Boolean = false;
     private var matrix:Matrix;
+    private var _imagePixelMask:PixelMaskDisplayObject;
+    private var imgFrame:Image;
 
     private var _mirror:Boolean = false;
 
@@ -112,6 +115,8 @@ public class CameraView extends Sprite
         if (rotate) {
             matrix.rotate(Math.PI / 2);
         }
+        imgFrame = new Image(Assets.getTexture("Frame"));
+
     }
 
     /**
@@ -165,6 +170,19 @@ public class CameraView extends Sprite
             height = screenRect.height;
 
             addChild(image);
+            imgFrame.x = 0;
+            imgFrame.y = 0;
+            imgFrame.width = screenRect.width;
+            imgFrame.height = screenRect.height;
+
+
+            addChild(imgFrame);
+
+            _imagePixelMask = new PixelMaskDisplayObject();
+            _imagePixelMask.mask = imgFrame;
+            _imagePixelMask.addChild(image);
+
+            addChild(_imagePixelMask);
         }
         else {
             trace("couldn't find camera", cameraId, "among cameras", Camera.names);
