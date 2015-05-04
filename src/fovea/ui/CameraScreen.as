@@ -136,11 +136,11 @@ public class CameraScreen extends Sprite {
 
         //Select a webcam
         cameraView.selectCamera(0);
-        _okButton.x = cameraView.width / 2 - _okButton.width / 2 + _buttonSpacing;
-        _okButton.y = cameraView.height * .8;
+        _okButton.x = _camPosition.x + _camPosition.width / 2 - _okButton.width / 2 + _buttonSpacing;
+        _okButton.y = _camPosition.y + _camPosition.height * .8;
         addChild(_okButton);
 
-        _cancelButton.x = cameraView.width / 2 - _cancelButton.width / 2 - _buttonSpacing;
+        _cancelButton.x = _camPosition.x + _camPosition.width / 2 - _cancelButton.width / 2 - _buttonSpacing;
         _cancelButton.y = _okButton.y + 10;
         addChild(_cancelButton);
 
@@ -170,6 +170,8 @@ public class CameraScreen extends Sprite {
             var i:Number = getChildIndex(_cancelButton);
             _bitmapData = cameraView.getImage();
             image = new Image(Texture.fromBitmapData(_bitmapData));
+            image.x = _camPosition.x;
+            image.y = _camPosition.y;
             addChildAt(image, i + 1);
 
             cameraView.pause();

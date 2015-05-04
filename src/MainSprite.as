@@ -7,8 +7,8 @@ import flash.utils.ByteArray;
 
 import fovea.ui.CameraScreen;
 
-import starling.display.Image;
 import starling.display.Button;
+import starling.display.Image;
 import starling.display.Sprite;
 import starling.events.Event;
 
@@ -22,7 +22,7 @@ public class MainSprite extends Sprite {
         this.removeEventListener(Event.ADDED_TO_STAGE, onAddedToStage);
         var s:CameraScreen = new CameraScreen();
 
-        s.camPosition = new Rectangle(10, 10, 280, 280);
+        s.camPosition = new Rectangle(100, 100, 280, 280);
         s.foreground = new Image(Assets.getTexture("CameraTexture"));
         s.okButton = new Button(Assets.getTexture("CameraTexture"));
         s.cancelButton = new Button(Assets.getTexture("CancelTexture"));

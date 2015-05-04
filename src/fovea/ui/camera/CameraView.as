@@ -159,6 +159,10 @@ public class CameraView extends Sprite
             video.addEventListener(Event.ENTER_FRAME, onVideoUpdate);
             var texture:starling.textures.Texture = starling.textures.Texture.fromBitmapData(bmd, false, false, downSample);
             image = new Image(texture);
+            x = screenRect.x;
+            y = screenRect.y;
+            width = screenRect.width;
+            height = screenRect.height;
 
             addChild(image);
         }
