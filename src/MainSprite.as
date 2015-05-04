@@ -6,6 +6,7 @@ import flash.geom.Rectangle;
 import flash.utils.ByteArray;
 
 import fovea.ui.CameraScreen;
+import fovea.ui.controls.TriToggleSwitch;
 
 import starling.display.Button;
 import starling.display.Image;
@@ -16,6 +17,10 @@ public class MainSprite extends Sprite {
 
     public function MainSprite() {
         this.addEventListener(Event.ADDED_TO_STAGE, onAddedToStage);
+    }
+
+    private function onToggleChange(event:TriToggleSwitch):void {
+        trace("toggle");
     }
 
     private function onAddedToStage(event:Event):void {
@@ -38,6 +43,18 @@ public class MainSprite extends Sprite {
             var imgBytes:ByteArray = s.getJPEG();
         });
 
+        var ts:TriToggleSwitch = new TriToggleSwitch(100);
+        ts.imgOff = new Image(Assets.getTexture("ToggleOff"));
+        ts.imgOn = new Image(Assets.getTexture("ToggleOn"));
+        ts.bg = new Image(Assets.getTexture("ToggleBG"));
+        ts.x = 200;
+        ts.y = 0;
+
+        addChild(ts);
+
+//        ts.addEventListener(TriToggleSwitch.TOGGLE_CHANGED, onToggleChange);
     }
+
+
 }
 }

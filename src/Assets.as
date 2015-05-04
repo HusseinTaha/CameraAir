@@ -21,6 +21,18 @@ public class Assets {
     public static var Frame:Class;
 
 
+    [Embed(source="../medias/graphics/toggle_bg.png")]
+    public static var ToggleBG:Class;
+
+
+    [Embed(source="../medias/graphics/toggle_off.png")]
+    public static var ToggleOff:Class;
+
+
+    [Embed(source="../medias/graphics/toggle_on.png")]
+    public static var ToggleOn:Class;
+
+
     private static var gameTextures:Dictionary = new Dictionary();
 
 

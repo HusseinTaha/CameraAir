@@ -14,6 +14,9 @@
             <entry library-name="PixelMask" library-level="application">
               <dependency linkage="Merged" />
             </entry>
+            <entry library-name="Feathers" library-level="application">
+              <dependency linkage="Merged" />
+            </entry>
           </entries>
           <sdk name="Apache-Flex" />
         </dependencies>
@@ -39,5 +42,6 @@
     <orderEntry type="library" exported="" name="starling" level="application" />
     <orderEntry type="library" exported="" name="AS3CoreLib" level="application" />
     <orderEntry type="library" exported="" name="PixelMask" level="application" />
+    <orderEntry type="library" exported="" name="Feathers" level="application" />
   </component>
 </module>
