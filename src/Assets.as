@@ -17,7 +17,7 @@ public class Assets {
     [Embed(source="../medias/graphics/cancel.png")]
     public static var CancelTexture:Class;
 
-    [Embed(source="../medias/graphics/frame.png")]
+    [Embed(source="../medias/graphics/circle_green.png")]
     public static var Frame:Class;
 
 

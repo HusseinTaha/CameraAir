@@ -19,6 +19,18 @@ public class TriToggleSwitch extends ToggleSwitch {
     }
 
     private var _height:Number;
+    private var _btnOn:Button;
+    private var _btnOff:Button;
+
+    private var _spacing:Number = 10;
+
+    public function get spacing():Number {
+        return _spacing;
+    }
+
+    public function set spacing(value:Number):void {
+        _spacing = value;
+    }
 
     private var _bg:Image;
 
@@ -52,31 +64,46 @@ public class TriToggleSwitch extends ToggleSwitch {
 
     private function onAddedToStage(event:Event):void {
         _bg.width = _bg.width * _height / _bg.height;
-        height = _height;
+        _bg.height = _height;
+
+        width = _bg.width;
+        height = _bg.height;
+
+        _imgOff.height = _height - spacing;
+        _imgOn.height = _imgOff.height;
+
+        _imgOff.width = _bg.width / 2;
+        _imgOn.width = _bg.width / 2;
+
+        _btnOff = new Button();
+        _btnOff.defaultSkin = _imgOff;
+
+        _btnOn = new Button();
+        _btnOn.defaultSkin = _imgOn;
+
+
 
         this.addChild(_bg);
         this.thumbProperties.defaultSkin = _imgOff;
         this.showLabels = false;
 
         this.height = _bg.height;
-        this.width = _bg.width;
 
 
         this.onTrackFactory = function ():Button {
-            var button:Button = new Button();
-            //skin the on track here
-            button.defaultSkin = _imgOn;
-            return button;
+            return _btnOn;
         }
 
         this.offTrackFactory = function ():Button {
-            var offTrack:Button = new Button();
-            offTrack.defaultSkin = _imgOff;
-            return offTrack;
+            return _btnOff;
         };
+
+        this.paddingLeft = _spacing;
+        this.paddingRight = _spacing;
 
         this.trackLayoutMode = ToggleSwitch.TRACK_LAYOUT_MODE_ON_OFF;
         this.addEventListener(Event.CHANGE, toggleChangeHandler);
+        this.setSelectionWithAnimation(true);
     }
 
     private function toggleChangeHandler(event:Event):void {

@@ -12,6 +12,7 @@ import starling.display.Button;
 import starling.display.Image;
 import starling.display.Sprite;
 import starling.events.Event;
+import starling.extensions.pixelmask.PixelMaskDisplayObject;
 import starling.textures.Texture;
 
 public class CameraScreen extends Sprite {
@@ -32,6 +33,7 @@ public class CameraScreen extends Sprite {
     private var cameraView:CameraView;
     private var _bitmapData:BitmapData;
     private var image:Image;
+    private var _imagePixelMask:PixelMaskDisplayObject;
 
     private var _okButton:Button;
 
@@ -41,6 +43,16 @@ public class CameraScreen extends Sprite {
 
     public function set okButton(value:Button):void {
         _okButton = value;
+    }
+
+    private var _imgFrame:Image;
+
+    public function get imgFrame():Image {
+        return _imgFrame;
+    }
+
+    public function set imgFrame(value:Image):void {
+        _imgFrame = value;
     }
 
     private var _cancelButton:Button;
@@ -128,6 +140,7 @@ public class CameraScreen extends Sprite {
 
         if (_camPosition == null) _camPosition = new Rectangle(0, 0, 320, 240);
         cameraView.init(_camPosition, 20);
+        cameraView.imgFrame = new Image(_imgFrame.texture);
         //Each time you call reflect() you toggle mirroring on/off
         cameraView.reflect();
         //Put it onstage
@@ -174,6 +187,12 @@ public class CameraScreen extends Sprite {
             image.y = _camPosition.y;
             addChildAt(image, i + 1);
 
+            _imagePixelMask = new PixelMaskDisplayObject();
+            _imagePixelMask.mask = imgFrame;
+            _imagePixelMask.addChild(image);
+
+            addChildAt(_imagePixelMask, i + 2);
+
             cameraView.pause();
             showControls();
             dispatchEventWith(TAKE_PICTURE);
@@ -183,6 +202,9 @@ public class CameraScreen extends Sprite {
             dispatchEventWith(ACCEPT_PICTURE);
         } else if (btn == _discardButton) {
             removeChild(image, true);
+            removeChild(_imagePixelMask, true);
+            removeChild(_imgFrame);
+
             hideControls();
             cameraView.resume();
             dispatchEventWith(RETAKE);

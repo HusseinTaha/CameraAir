@@ -66,7 +66,6 @@ public class CameraView extends Sprite
     private var rotate:Boolean = false;
     private var matrix:Matrix;
     private var _imagePixelMask:PixelMaskDisplayObject;
-    private var imgFrame:Image;
 
     private var _mirror:Boolean = false;
 
@@ -76,6 +75,16 @@ public class CameraView extends Sprite
     public function get mirror():Boolean
     {
         return _mirror;
+    }
+
+    private var _imgFrame:Image;
+
+    public function get imgFrame():Image {
+        return _imgFrame;
+    }
+
+    public function set imgFrame(value:Image):void {
+        _imgFrame = value;
     }
 
     /**
@@ -115,7 +124,6 @@ public class CameraView extends Sprite
         if (rotate) {
             matrix.rotate(Math.PI / 2);
         }
-        imgFrame = new Image(Assets.getTexture("Frame"));
 
     }
 
@@ -170,6 +178,7 @@ public class CameraView extends Sprite
             height = screenRect.height;
 
             addChild(image);
+
             imgFrame.x = 0;
             imgFrame.y = 0;
             imgFrame.width = screenRect.width;
@@ -228,4 +237,6 @@ public class CameraView extends Sprite
         flash.display3D.textures.Texture(image.texture.base).uploadFromBitmapData(bmd);
     }
 }
+
+
 }

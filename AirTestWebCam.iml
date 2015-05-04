@@ -17,6 +17,9 @@
             <entry library-name="Feathers" library-level="application">
               <dependency linkage="Merged" />
             </entry>
+            <entry library-name="TweenLite" library-level="application">
+              <dependency linkage="Merged" />
+            </entry>
           </entries>
           <sdk name="Apache-Flex" />
         </dependencies>
@@ -27,7 +30,9 @@
         </compiler-options>
         <packaging-air-desktop />
         <packaging-android enabled="true" use-generated-descriptor="false" custom-descriptor-path="$MODULE_DIR$/Main-app.xml" package-file-name="Main" />
-        <packaging-ios enabled="true" use-generated-descriptor="false" custom-descriptor-path="$MODULE_DIR$/Main-app.xml" package-file-name="Main" />
+        <packaging-ios enabled="true" use-generated-descriptor="false" custom-descriptor-path="$MODULE_DIR$/Main-app.xml" package-file-name="Main">
+          <AirSigningOptions keystore-path="$USER_HOME$/Desktop/Stage/sportstown-cordova/documents/certificates/ios/aps_development.cer" provisioning-profile-path="$USER_HOME$/Desktop/Stage/sportstown-cordova/documents/certificates/ios/Sportstown_Devel.mobileprovision" />
+        </packaging-ios>
       </configuration>
     </configurations>
     <compiler-options />
@@ -43,5 +48,6 @@
     <orderEntry type="library" exported="" name="AS3CoreLib" level="application" />
     <orderEntry type="library" exported="" name="PixelMask" level="application" />
     <orderEntry type="library" exported="" name="Feathers" level="application" />
+    <orderEntry type="library" exported="" name="TweenLite" level="application" />
   </component>
 </module>

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a3921efa-ee8f-4fb2-8d0f-1f7b3e02f261" name="Default" comment="Add Circulair Frame to cameraView">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/medias/graphics/toggle_bg.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/medias/graphics/toggle_off.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/medias/graphics/toggle_on.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/fovea/ui/controls/TriToggleSwitch.as" />
+    <list default="true" id="a3921efa-ee8f-4fb2-8d0f-1f7b3e02f261" name="Default" comment="Add ToggleSwitch">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/medias/graphics/circle_green.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/AirTestWebCam/Main.swf" afterPath="$PROJECT_DIR$/out/production/AirTestWebCam/Main.swf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AirTestWebCam.iml" afterPath="$PROJECT_DIR$/AirTestWebCam.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Assets.as" afterPath="$PROJECT_DIR$/src/Assets.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fovea/ui/CameraScreen.as" afterPath="$PROJECT_DIR$/src/fovea/ui/CameraScreen.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fovea/ui/camera/CameraView.as" afterPath="$PROJECT_DIR$/src/fovea/ui/camera/CameraView.as" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MainSprite.as" afterPath="$PROJECT_DIR$/src/MainSprite.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fovea/ui/controls/TriToggleSwitch.as" afterPath="$PROJECT_DIR$/src/fovea/ui/controls/TriToggleSwitch.as" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="AirTestWebCam.iws" />
@@ -44,7 +44,7 @@
       <file leaf-file-name="Main.as" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="405">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
               <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
               <folding>
                 <element signature="e#11#39#0" expanded="true" />
@@ -56,8 +56,8 @@
       <file leaf-file-name="CameraScreen.as" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/fovea/ui/CameraScreen.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2940">
-              <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="2378" max-vertical-offset="3285">
+              <caret line="136" column="55" selection-start-line="136" selection-start-column="55" selection-end-line="136" selection-end-column="55" />
               <folding>
                 <element signature="e#65#97#0" expanded="true" />
               </folding>
@@ -65,13 +65,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MainSprite.as" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MainSprite.as" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MainSprite.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6086956" vertical-offset="188" max-vertical-offset="990">
-              <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="293" max-vertical-offset="1095">
+              <caret line="50" column="19" selection-start-line="50" selection-start-column="19" selection-end-line="50" selection-end-column="19" />
               <folding>
-                <element signature="e#56#94#0" expanded="true" />
+                <element signature="e#56#84#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -80,8 +80,8 @@
       <file leaf-file-name="CameraView.as" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/fovea/ui/camera/CameraView.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="1020" max-vertical-offset="3555">
-              <caret line="68" column="31" selection-start-line="68" selection-start-column="31" selection-end-line="68" selection-end-column="31" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="2355" max-vertical-offset="3735">
+              <caret line="173" column="25" selection-start-line="173" selection-start-column="25" selection-end-line="173" selection-end-column="26" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#74#109#0" expanded="true" />
@@ -90,11 +90,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TriToggleSwitch.as" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TriToggleSwitch.as" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/fovea/ui/controls/TriToggleSwitch.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1530">
-              <caret line="68" column="5" selection-start-line="68" selection-start-column="5" selection-end-line="68" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.46758103" vertical-offset="810" max-vertical-offset="1860">
+              <caret line="81" column="35" selection-start-line="81" selection-start-column="35" selection-end-line="81" selection-end-column="35" />
               <folding>
                 <element signature="e#73#105#0" expanded="true" />
               </folding>
@@ -102,13 +102,26 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Makefile" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Makefile">
+          <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.5" vertical-offset="0" max-vertical-offset="285">
+              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="Assets.as" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Assets.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="296" max-vertical-offset="825">
-              <caret line="31" column="54" selection-start-line="31" selection-start-column="54" selection-end-line="31" selection-end-column="54" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="780">
+              <caret line="19" column="50" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
               <folding>
-                <element signature="e#56#84#0" expanded="true" />
+                <marker date="1430740022000" expanded="true" signature="150:151" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -134,11 +147,12 @@
         <option value="$PROJECT_DIR$/src/fovea/iu/ui/CameraScreen.as" />
         <option value="$PROJECT_DIR$/src/fovea/ui/camera/events/CameraEvent.as" />
         <option value="$PROJECT_DIR$/src/Main.as" />
-        <option value="$PROJECT_DIR$/src/fovea/ui/CameraScreen.as" />
-        <option value="$PROJECT_DIR$/src/fovea/ui/camera/CameraView.as" />
         <option value="$PROJECT_DIR$/src/Assets.as" />
-        <option value="$PROJECT_DIR$/src/fovea/ui/controls/TriToggleSwitch.as" />
+        <option value="$PROJECT_DIR$/src/fovea/ui/camera/CameraView.as" />
+        <option value="$PROJECT_DIR$/src/fovea/ui/CameraScreen.as" />
+        <option value="$PROJECT_DIR$/src/fovea/ui/controls/ToggleBtn.as" />
         <option value="$PROJECT_DIR$/src/MainSprite.as" />
+        <option value="$PROJECT_DIR$/src/fovea/ui/controls/TriToggleSwitch.as" />
       </list>
     </option>
   </component>
@@ -174,8 +188,8 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -248,6 +262,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="controls" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AirTestWebCam" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="AirTestWebCam" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="camera" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -287,10 +323,10 @@
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="options.lastSelected" value="reference.settings.deploy.options" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Applications/Air-Libs/feathers-2.1.1/source" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/Stage/sportstown-cordova/documents/certificates/ios/aps_development.cer" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="151" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="153" />
@@ -310,15 +346,16 @@
     <property name="restartRequiresConfirmation" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/medias/graphics" />
+    </key>
     <key name="CreateActionScriptClassDialog.DESTINATION_PACKAGE_RECENT_KEY">
       <recent name="fovea.ui.controls" />
       <recent name="" />
       <recent name="fovea.ui.camera.events" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/medias/graphics" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/medias/graphics" />
       <recent name="$PROJECT_DIR$/src/fovea/ui/camera" />
       <recent name="$PROJECT_DIR$/src/fovea/iu/ui" />
       <recent name="$PROJECT_DIR$/src/fovea/iu" />
@@ -623,7 +660,8 @@
       <workItem from="1430307520743" duration="2707000" />
       <workItem from="1430373894234" duration="19774000" />
       <workItem from="1430402183013" duration="88000" />
-      <workItem from="1430720756624" duration="11425000" />
+      <workItem from="1430720756624" duration="12156000" />
+      <workItem from="1430736502169" duration="4331000" />
     </task>
     <task id="LOCAL-00001" summary="Merge branch 'master' of https://github.com/HusseinTaha/CameraAir&#10;">
       <created>1430387834081</created>
@@ -661,11 +699,17 @@
       <option name="project" value="LOCAL" />
       <updated>1430726131774</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Add ToggleSwitch">
+      <created>1430735618330</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1430735618330</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33994000" />
+    <option name="totallyTimeSpent" value="39056000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -711,8 +755,8 @@
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25751072" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32891566" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25751072" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891566" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -745,7 +789,8 @@
     <MESSAGE value="Fix remarks, and cleaning3" />
     <MESSAGE value="Fix bug" />
     <MESSAGE value="Add Circulair Frame to cameraView" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Circulair Frame to cameraView" />
+    <MESSAGE value="Add ToggleSwitch" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add ToggleSwitch" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -773,8 +818,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/fovea/ui/CameraScreen.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1733" max-vertical-offset="2910">
-          <caret line="128" column="24" selection-start-line="128" selection-start-column="12" selection-end-line="128" selection-end-column="24" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="2940">
+          <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
           <folding>
             <element signature="e#65#97#0" expanded="true" />
           </folding>
@@ -783,18 +828,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MainSprite.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="86" max-vertical-offset="705">
-          <caret line="24" column="40" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="401" max-vertical-offset="960">
+          <caret line="45" column="58" selection-start-line="45" selection-start-column="58" selection-end-line="45" selection-end-column="58" />
           <folding>
-            <element signature="e#56#94#0" expanded="true" />
+            <element signature="e#56#84#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/fovea/ui/camera/CameraView.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3285">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="3555">
+          <caret line="68" column="31" selection-start-line="68" selection-start-column="31" selection-end-line="68" selection-end-column="31" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#74#109#0" expanded="true" />
@@ -802,12 +847,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/fovea/ui/controls/TriToggleSwitch.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1455">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#73#105#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Assets.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="540">
-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="780">
+          <caret line="31" column="54" selection-start-line="31" selection-start-column="54" selection-end-line="31" selection-end-column="54" />
           <folding>
-            <element signature="e#56#84#0" expanded="true" />
+            <marker date="1430740022000" expanded="true" signature="150:151" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -837,7 +892,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="86" max-vertical-offset="705">
           <caret line="24" column="40" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
           <folding>
-            <element signature="e#56#94#0" expanded="true" />
+            <element signature="e#56#84#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -858,7 +913,58 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="540">
           <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding>
+            <marker date="1430740022000" expanded="true" signature="150:151" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="405">
+          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+          <folding>
+            <element signature="e#11#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fovea/ui/CameraScreen.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1733" max-vertical-offset="2910">
+          <caret line="128" column="24" selection-start-line="128" selection-start-column="12" selection-end-line="128" selection-end-column="24" />
+          <folding>
+            <element signature="e#65#97#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MainSprite.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="86" max-vertical-offset="705">
+          <caret line="24" column="40" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
+          <folding>
             <element signature="e#56#84#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/fovea/ui/camera/CameraView.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3285">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#74#109#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Assets.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="540">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <marker date="1430740022000" expanded="true" signature="150:151" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -961,7 +1067,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.29090908" vertical-offset="0" max-vertical-offset="3150">
           <caret line="16" column="24" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -986,17 +1091,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Makefile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="225">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Main-app.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.701995" vertical-offset="893" max-vertical-offset="3960">
           <caret line="22" column="34" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Applications/Air-Libs/feathers-2.1.1/source/feathers/controls/ToggleSwitch.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3327032" vertical-offset="37639" max-vertical-offset="40335">
+          <caret line="2548" column="0" selection-start-line="2548" selection-start-column="0" selection-end-line="2548" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Makefile">
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.5" vertical-offset="0" max-vertical-offset="285">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1011,48 +1128,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Applications/Air-Libs/feathers-2.1.1/source/feathers/controls/ToggleSwitch.as">
+    <entry file="file://$PROJECT_DIR$/src/Assets.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3327032" vertical-offset="37639" max-vertical-offset="40335">
-          <caret line="2548" column="0" selection-start-line="2548" selection-start-column="0" selection-end-line="2548" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="780">
+          <caret line="19" column="50" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
+          <folding>
+            <marker date="1430740022000" expanded="true" signature="150:151" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/fovea/ui/CameraScreen.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2940">
-          <caret line="23" column="7" selection-start-line="23" selection-start-column="7" selection-end-line="23" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="2378" max-vertical-offset="3285">
+          <caret line="136" column="55" selection-start-line="136" selection-start-column="55" selection-end-line="136" selection-end-column="55" />
           <folding>
             <element signature="e#65#97#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Assets.as">
+    <entry file="file://$PROJECT_DIR$/src/MainSprite.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="825">
-          <caret line="31" column="54" selection-start-line="31" selection-start-column="54" selection-end-line="31" selection-end-column="54" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="293" max-vertical-offset="1095">
+          <caret line="50" column="19" selection-start-line="50" selection-start-column="19" selection-end-line="50" selection-end-column="19" />
           <folding>
             <element signature="e#56#84#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/fovea/ui/controls/TriToggleSwitch.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1530">
-          <caret line="68" column="5" selection-start-line="68" selection-start-column="5" selection-end-line="68" selection-end-column="5" />
-          <folding>
-            <element signature="e#73#105#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/fovea/ui/camera/CameraView.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1020" max-vertical-offset="3555">
-          <caret line="68" column="31" selection-start-line="68" selection-start-column="31" selection-end-line="68" selection-end-column="31" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="2040" max-vertical-offset="3735">
+          <caret line="173" column="25" selection-start-line="173" selection-start-column="25" selection-end-line="173" selection-end-column="26" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#74#109#0" expanded="true" />
@@ -1060,12 +1169,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MainSprite.as">
+    <entry file="file://$PROJECT_DIR$/src/fovea/ui/controls/TriToggleSwitch.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6086956" vertical-offset="188" max-vertical-offset="990">
-          <caret line="36" column="35" selection-start-line="36" selection-start-column="35" selection-end-line="36" selection-end-column="35" />
+        <state vertical-scroll-proportion="0.46758103" vertical-offset="810" max-vertical-offset="1860">
+          <caret line="81" column="35" selection-start-line="81" selection-start-column="35" selection-end-line="81" selection-end-column="35" />
           <folding>
-            <element signature="e#56#94#0" expanded="true" />
+            <element signature="e#73#105#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1099,7 +1208,7 @@
       </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Feathers</last-edited>
+          <last-edited>TweenLite</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

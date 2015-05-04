@@ -33,6 +33,7 @@ public class MainSprite extends Sprite {
         s.cancelButton = new Button(Assets.getTexture("CancelTexture"));
         s.acceptButton = new Button(Assets.getTexture("CameraTexture"));
         s.discardButton = new Button(Assets.getTexture("CancelTexture"));
+        s.imgFrame = new Image(Assets.getTexture("Frame"));
         addChild(s);
 
         s.addEventListener(CameraScreen.CLOSED, function (event:Event):void {
@@ -58,6 +59,7 @@ public class MainSprite extends Sprite {
         ts.x = 50;
         ts.y = 0;
         addChild(ts);
+
 
 //        ts.addEventListener(TriToggleSwitch.TOGGLE_CHANGED, onToggleChange);
     }
