@@ -63,6 +63,7 @@ public class TriToggleSwitch extends ToggleSwitch {
     }
 
     private function onAddedToStage(event:Event):void {
+        this.removeEventListener(Event.ADDED_TO_STAGE, onAddedToStage);
         _bg.width = _bg.width * _height / _bg.height;
         _bg.height = _height;
 
@@ -76,27 +77,16 @@ public class TriToggleSwitch extends ToggleSwitch {
         _imgOn.width = _bg.width / 2;
 
         _btnOff = new Button();
-        _btnOff.defaultSkin = _imgOff;
+        _btnOff.defaultIcon = _imgOff;
 
         _btnOn = new Button();
-        _btnOn.defaultSkin = _imgOn;
-
-
+        _btnOn.defaultIcon = _imgOn;
 
         this.addChild(_bg);
-        this.thumbProperties.defaultSkin = _imgOff;
+//        this.thumbProperties.defaultSkin = _imgOff;
         this.showLabels = false;
 
         this.height = _bg.height;
-
-
-        this.onTrackFactory = function ():Button {
-            return _btnOn;
-        }
-
-        this.offTrackFactory = function ():Button {
-            return _btnOff;
-        };
 
         this.paddingLeft = _spacing;
         this.paddingRight = _spacing;
