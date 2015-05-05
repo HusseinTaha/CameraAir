@@ -2,7 +2,6 @@
  * Created by husseintaha on 5/4/15.
  */
 package fovea.ui.controls {
-import feathers.controls.Button;
 import feathers.controls.ToggleSwitch;
 
 import starling.display.Image;
@@ -23,8 +22,6 @@ public class TriToggleSwitch extends ToggleSwitch {
 
     private var _scalingFactor:Number;
     private var _height:Number;
-    private var _btnOn:Button;
-    private var _btnOff:Button;
 
     private var _spacing:Number = 20;
 
@@ -75,18 +72,11 @@ public class TriToggleSwitch extends ToggleSwitch {
         height = _bg.height;
         var h:Number = _imgOff.height;
 
-        _imgOff.height = _height - spacing * 2;
+        _imgOff.height = _height - spacing * 1.5;
         _imgOn.height = _imgOff.height;
 
         _imgOff.width = _imgOff.width / h * _imgOff.height;
         _imgOn.width = _imgOff.width;
-
-        _btnOff = new Button();
-        _btnOff.defaultIcon = _imgOff;
-
-        _btnOn = new Button();
-        _btnOn.defaultIcon = _imgOn;
-
 
         this.addChild(_bg);
         this.showLabels = false;
@@ -94,7 +84,7 @@ public class TriToggleSwitch extends ToggleSwitch {
         this.height = _bg.height;
 
         this.paddingLeft = _spacing;
-        this.paddingRight = _spacing;
+        this.paddingRight = _spacing * 0.7;
 
         this.trackLayoutMode = ToggleSwitch.TRACK_LAYOUT_MODE_ON_OFF;
         this.addEventListener(Event.CHANGE, toggleChangeHandler);

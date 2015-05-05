@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a3921efa-ee8f-4fb2-8d0f-1f7b3e02f261" name="Default" comment="Fix ToggleSwitch bugs">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/as3corelib" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/AirTestWebCam/Main.swf" afterPath="$PROJECT_DIR$/out/production/AirTestWebCam/Main.swf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitmodules" afterPath="$PROJECT_DIR$/.gitmodules" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fovea/ui/camera/CameraView.as" afterPath="$PROJECT_DIR$/src/fovea/ui/camera/CameraView.as" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MainSprite.as" afterPath="$PROJECT_DIR$/src/MainSprite.as" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/medias/graphics/toggle_bg.png" afterPath="$PROJECT_DIR$/medias/graphics/toggle_bg.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/medias/graphics/toggle_off.png" afterPath="$PROJECT_DIR$/medias/graphics/toggle_off.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/medias/graphics/toggle_on.png" afterPath="$PROJECT_DIR$/medias/graphics/toggle_on.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/fovea/ui/controls/TriToggleSwitch.as" afterPath="$PROJECT_DIR$/src/fovea/ui/controls/TriToggleSwitch.as" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -66,10 +64,10 @@
       <file leaf-file-name="MainSprite.as" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MainSprite.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="960">
+            <state vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="1080">
               <caret line="49" column="49" selection-start-line="49" selection-start-column="49" selection-end-line="49" selection-end-column="49" />
               <folding>
-                <marker date="1430810522000" expanded="true" signature="313:314" placeholder="..." />
+                <marker date="1430810522000" expanded="false" signature="313:314" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -82,7 +80,7 @@
               <caret line="113" column="0" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
-                <element signature="e#74#109#0" expanded="true" />
+                <marker date="1430811212000" expanded="true" signature="544:545" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -91,26 +89,12 @@
       <file leaf-file-name="TriToggleSwitch.as" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/fovea/ui/controls/TriToggleSwitch.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.69754255" vertical-offset="891" max-vertical-offset="1800">
-              <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.53797466" vertical-offset="0" max-vertical-offset="1650">
+              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding>
                 <element signature="e#73#105#0" expanded="true" />
               </folding>
             </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="toggle_off.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/medias/graphics/toggle_off.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="toggle_on.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/medias/graphics/toggle_on.png">
-          <provider selected="true" editor-type-id="images">
-            <state />
           </provider>
         </entry>
       </file>
@@ -130,12 +114,33 @@
       <file leaf-file-name="Assets.as" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Assets.as">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="195" max-vertical-offset="765">
-              <caret line="19" column="50" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
+              <caret line="31" column="47" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="47" />
               <folding>
                 <marker date="1430740022000" expanded="false" signature="150:151" placeholder="..." />
               </folding>
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="toggle_bg.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/medias/graphics/toggle_bg.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="toggle_off.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/medias/graphics/toggle_off.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="toggle_on.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/medias/graphics/toggle_on.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
@@ -358,13 +363,13 @@
     <property name="restartRequiresConfirmation" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/medias/graphics" />
-    </key>
     <key name="CreateActionScriptClassDialog.DESTINATION_PACKAGE_RECENT_KEY">
       <recent name="fovea.ui.controls" />
       <recent name="" />
       <recent name="fovea.ui.camera.events" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/medias/graphics" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/medias/graphics" />
@@ -674,7 +679,7 @@
       <workItem from="1430402183013" duration="88000" />
       <workItem from="1430720756624" duration="12156000" />
       <workItem from="1430736502169" duration="4916000" />
-      <workItem from="1430803720923" duration="4788000" />
+      <workItem from="1430803720923" duration="5378000" />
     </task>
     <task id="LOCAL-00001" summary="Merge branch 'master' of https://github.com/HusseinTaha/CameraAir&#10;">
       <created>1430387834081</created>
@@ -736,11 +741,17 @@
       <option name="project" value="LOCAL" />
       <updated>1430806827590</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Fix ToggleSwitch bugs">
+      <created>1430814022804</created>
+      <option name="number" value="00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1430814022804</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44429000" />
+    <option name="totallyTimeSpent" value="45019000" />
   </component>
   <component name="TodoView" selected-index="0">
     <todo-panel id="selected-file">
@@ -840,22 +851,12 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/fovea/ui/CameraScreen.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3270">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#65#97#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/MainSprite.as">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="585" max-vertical-offset="960">
           <caret line="50" column="19" selection-start-line="50" selection-start-column="19" selection-end-line="50" selection-end-column="19" />
           <folding>
-            <marker date="1430810522000" expanded="true" signature="313:314" placeholder="..." />
+            <marker date="1430810522000" expanded="false" signature="313:314" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -866,7 +867,7 @@
           <caret line="158" column="21" selection-start-line="158" selection-start-column="21" selection-end-line="158" selection-end-column="21" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <element signature="e#74#109#0" expanded="true" />
+            <marker date="1430811212000" expanded="true" signature="544:545" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -927,7 +928,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="401" max-vertical-offset="960">
           <caret line="45" column="58" selection-start-line="45" selection-start-column="58" selection-end-line="45" selection-end-column="58" />
           <folding>
-            <marker date="1430810522000" expanded="true" signature="313:314" placeholder="..." />
+            <marker date="1430810522000" expanded="false" signature="313:314" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -938,7 +939,7 @@
           <caret line="68" column="31" selection-start-line="68" selection-start-column="31" selection-end-line="68" selection-end-column="31" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <element signature="e#74#109#0" expanded="true" />
+            <marker date="1430811212000" expanded="true" signature="544:545" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -988,7 +989,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="86" max-vertical-offset="705">
           <caret line="24" column="40" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
           <folding>
-            <marker date="1430810522000" expanded="true" signature="313:314" placeholder="..." />
+            <marker date="1430810522000" expanded="false" signature="313:314" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -999,7 +1000,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <element signature="e#74#109#0" expanded="true" />
+            <marker date="1430811212000" expanded="true" signature="544:545" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -1039,7 +1040,7 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="86" max-vertical-offset="705">
           <caret line="24" column="40" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
           <folding>
-            <marker date="1430810522000" expanded="true" signature="313:314" placeholder="..." />
+            <marker date="1430810522000" expanded="false" signature="313:314" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -1050,7 +1051,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <element signature="e#74#109#0" expanded="true" />
+            <marker date="1430811212000" expanded="true" signature="544:545" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -1098,7 +1099,7 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <element signature="e#74#109#0" expanded="true" />
+            <marker date="1430811212000" expanded="true" signature="544:545" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -1224,16 +1225,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Assets.as">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="780">
-          <caret line="19" column="50" selection-start-line="19" selection-start-column="50" selection-end-line="19" selection-end-column="50" />
-          <folding>
-            <marker date="1430740022000" expanded="false" signature="150:151" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/medias/graphics/circle_green.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -1249,22 +1240,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/medias/graphics/toggle_off.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/medias/graphics/toggle_on.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/MainSprite.as">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="960">
           <caret line="49" column="49" selection-start-line="49" selection-start-column="49" selection-end-line="49" selection-end-column="49" />
           <folding>
-            <marker date="1430810522000" expanded="true" signature="313:314" placeholder="..." />
+            <marker date="1430810522000" expanded="false" signature="313:314" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -1283,15 +1264,40 @@
           <caret line="113" column="0" selection-start-line="113" selection-start-column="0" selection-end-line="113" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
-            <element signature="e#74#109#0" expanded="true" />
+            <marker date="1430811212000" expanded="true" signature="544:545" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Assets.as">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="765">
+          <caret line="31" column="47" selection-start-line="31" selection-start-column="38" selection-end-line="31" selection-end-column="47" />
+          <folding>
+            <marker date="1430740022000" expanded="false" signature="150:151" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/medias/graphics/toggle_on.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/medias/graphics/toggle_off.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/medias/graphics/toggle_bg.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/fovea/ui/controls/TriToggleSwitch.as">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.69754255" vertical-offset="891" max-vertical-offset="1800">
-          <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.53797466" vertical-offset="0" max-vertical-offset="1650">
+          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding>
             <element signature="e#73#105#0" expanded="true" />
           </folding>
