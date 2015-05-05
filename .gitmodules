@@ -1,6 +1,6 @@
 [submodule "as3corelib"]
 	path = as3corelib
-	url = git@github.com:mikechambers/as3corelib.git
+	url = https://github.com/mikechambers/as3corelib.git
 [submodule "pixelmask"]
 	path = pixelmask
 	url = https://github.com/jonathanhart/pixelmask.git

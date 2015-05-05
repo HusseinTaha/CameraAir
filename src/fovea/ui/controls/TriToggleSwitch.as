@@ -15,14 +15,18 @@ public class TriToggleSwitch extends ToggleSwitch {
     public function TriToggleSwitch(height:Number) {
         super();
         _height = height;
+        _scalingFactor = height / 100;
+        _spacing = 10 * _scalingFactor;
+
         this.addEventListener(Event.ADDED_TO_STAGE, onAddedToStage);
     }
 
+    private var _scalingFactor:Number;
     private var _height:Number;
     private var _btnOn:Button;
     private var _btnOff:Button;
 
-    private var _spacing:Number = 10;
+    private var _spacing:Number = 20;
 
     public function get spacing():Number {
         return _spacing;
@@ -69,12 +73,13 @@ public class TriToggleSwitch extends ToggleSwitch {
 
         width = _bg.width;
         height = _bg.height;
+        var h:Number = _imgOff.height;
 
-        _imgOff.height = _height - spacing;
+        _imgOff.height = _height - spacing * 2;
         _imgOn.height = _imgOff.height;
 
-        _imgOff.width = _bg.width / 2;
-        _imgOn.width = _bg.width / 2;
+        _imgOff.width = _imgOff.width / h * _imgOff.height;
+        _imgOn.width = _imgOff.width;
 
         _btnOff = new Button();
         _btnOff.defaultIcon = _imgOff;
@@ -82,8 +87,8 @@ public class TriToggleSwitch extends ToggleSwitch {
         _btnOn = new Button();
         _btnOn.defaultIcon = _imgOn;
 
+
         this.addChild(_bg);
-//        this.thumbProperties.defaultSkin = _imgOff;
         this.showLabels = false;
 
         this.height = _bg.height;

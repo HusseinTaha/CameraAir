@@ -157,7 +157,12 @@ public class CameraView extends Sprite
 
         camera = Camera.getCamera(cameraId.toString());
         if (camera) {
-            camera.setMode(screenRect.width, screenRect.height, fps, true);
+            var w = camera.width;
+            var h = camera.height;
+            trace(w);
+            trace(h);
+
+            camera.setMode(screenRect.width, screenRect.height, fps, false);
             if (rotate) {
                 video = new Video(screenRect.height, screenRect.width);
             }
