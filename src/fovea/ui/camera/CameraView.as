@@ -157,19 +157,17 @@ public class CameraView extends Sprite
 
         camera = Camera.getCamera(cameraId.toString());
         if (camera) {
-            var w = camera.width;
-            var h = camera.height;
-            trace(w);
-            trace(h);
+            var w:Number = camera.width;
+            var h:Number = camera.height;
 
-            camera.setMode(screenRect.width, screenRect.height, fps, false);
+
             if (rotate) {
                 video = new Video(screenRect.height, screenRect.width);
             }
             else {
                 video = new Video(screenRect.width, screenRect.height);
             }
-            video.attachCamera(camera);
+
 
             bmd = new BitmapData(screenRect.width * downSample, screenRect.height * downSample);
 
@@ -182,12 +180,25 @@ public class CameraView extends Sprite
             width = screenRect.width;
             height = screenRect.height;
 
+            if (w / h > screenRect.width / screenRect.height) {
+                w = w / h * screenRect.height;
+                h = screenRect.height;
+            } else {
+                h = h / w * screenRect.width;
+                w = screenRect.width;
+            }
+
+            camera.setMode(w, h, fps, false);
+            video.attachCamera(camera);
+
+            image.width = screenRect.width;
+            image.height = screenRect.height;
             addChild(image);
 
             imgFrame.x = 0;
             imgFrame.y = 0;
-            imgFrame.width = screenRect.width;
-            imgFrame.height = screenRect.height;
+            imgFrame.width = image.width;
+            imgFrame.height = image.height;
 
 
             addChild(imgFrame);

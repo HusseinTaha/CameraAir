@@ -27,7 +27,7 @@ public class MainSprite extends Sprite {
         this.removeEventListener(Event.ADDED_TO_STAGE, onAddedToStage);
         var s:CameraScreen = new CameraScreen();
 
-        s.camPosition = new Rectangle(100, 100, 100, 100);
+        s.camPosition = new Rectangle(100, 100, 200, 200);
         s.foreground = new Image(Assets.getTexture("CameraTexture"));
         s.okButton = new Button(Assets.getTexture("CameraTexture"));
         s.cancelButton = new Button(Assets.getTexture("CancelTexture"));
