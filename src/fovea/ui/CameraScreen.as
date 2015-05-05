@@ -191,7 +191,7 @@ public class CameraScreen extends Sprite {
             _imagePixelMask.mask = imgFrame;
             _imagePixelMask.addChild(image);
 
-            addChildAt(_imagePixelMask, i + 2);
+//            addChildAt(_imagePixelMask, i + 2);
 
             cameraView.pause();
             showControls();
@@ -202,8 +202,7 @@ public class CameraScreen extends Sprite {
             dispatchEventWith(ACCEPT_PICTURE);
         } else if (btn == _discardButton) {
             removeChild(image, true);
-            removeChild(_imagePixelMask, true);
-            removeChild(_imgFrame);
+//            removeChild(_imagePixelMask, true);
 
             hideControls();
             cameraView.resume();
